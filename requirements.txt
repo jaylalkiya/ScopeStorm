@@ -1,0 +1,3 @@
+# ScopeStorm runtime dependency (engine + GUI).
+# The GUI uses Tkinter, which ships with CPython -- nothing to install for it.
+requests>=2.20

@@ -1,0 +1,24 @@
+{
+  "engagement_id": "ENG-2026-001",
+  "client": "Example Corp (internal staging)",
+  "operator": "your.name@company.com",
+  "operator_alias": "",
+
+  "authorized_hosts": [
+    "staging.example.com",
+    "localhost"
+  ],
+
+  "max_concurrency": 5,
+  "max_rps": 5,
+  "max_duration": 60,
+  "timeout": 10,
+
+  "window_start": "",
+  "window_end": "",
+
+  "abort_error_rate": 0.25,
+  "abort_p95_latency_ms": 5000,
+
+  "emergency_contact": "SOC on-call: +00 000 000 0000"
+}

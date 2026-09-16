@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ScopeStorm generated / runtime artifacts (never commit engagement output)
+audit_*.jsonl
+audit.log.jsonl
+report_*.json
+results.csv
+playbooks/
+_roe_demo_tmp.json
+
+# Editor / OS
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

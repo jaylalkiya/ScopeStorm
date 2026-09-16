@@ -1,0 +1,5 @@
+# Extra deps only needed to (re)generate the demo GIF via scripts/make_demo.py.
+# Not required to run ScopeStorm itself.
+-r requirements.txt
+Pillow>=9.0
+imageio>=2.20
