@@ -429,8 +429,20 @@ class App:
         canvas.bind("<Configure>", _cfg)
 
         def _wheel(e):
-            if canvas.winfo_height() < col.winfo_reqheight():
-                canvas.yview_scroll(-int(e.delta / 120), "units")
+            # Route the wheel to whatever is under the pointer. A global
+            # bind_all fires *in addition to* each widget's own class binding,
+            # so without this the sidebar scrolls at the same time as the
+            # results table / text boxes. Let scrollable widgets handle their
+            # own wheel, and only scroll the sidebar when truly over it.
+            node = self.root.winfo_containing(e.x_root, e.y_root)
+            while node is not None:
+                if isinstance(node, (tk.Text, ttk.Treeview)):
+                    return                      # widget scrolls itself
+                if node is canvas:
+                    if canvas.winfo_height() < col.winfo_reqheight():
+                        canvas.yview_scroll(-int(e.delta / 120), "units")
+                    return
+                node = getattr(node, "master", None)
         canvas.bind_all("<MouseWheel>", _wheel)
 
         self._build_roe_card(col)
