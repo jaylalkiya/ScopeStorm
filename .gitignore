@@ -20,3 +20,7 @@ _roe_demo_tmp.json
 Thumbs.db
 .idea/
 .vscode/
+
+# Explainer PDF (contains real engagement details — keep local)
+ScopeStorm-Explained.pdf
+*.pdf
