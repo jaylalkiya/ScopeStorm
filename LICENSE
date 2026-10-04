@@ -1,15 +1,6 @@
-USAGE NOTICE (not part of the license terms)
----------------------------------------------
-ScopeStorm is an AUTHORIZED-testing tool. Use it only against systems you own
-or have explicit written permission to test. Unauthorized use may be illegal
-(e.g. India IT Act 2000, US CFAA, UK Computer Misuse Act). The authors accept
-no liability for misuse. See README.md.
-
----------------------------------------------
-
 MIT License
 
-Copyright (c) 2026 ScopeStorm authors  <replace with your name / organization>
+Copyright (c) 2026 Jay Lalkiya
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
